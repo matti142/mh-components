@@ -17,5 +17,8 @@
     "toastr": "~2.1.1",
     "wow": "~1.1.2"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "resolutions": {
+    "jquery": ">=1.8.3"
+  }
 }
