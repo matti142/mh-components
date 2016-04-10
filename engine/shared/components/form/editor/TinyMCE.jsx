@@ -14,7 +14,8 @@ function initializeTinyMCE(id, onChange) {
       setup: ed=> {
         ed.on('keyup', e => onChange(ed));
         ed.on('change', e => onChange(ed));
-      }
+      },
+      menubar: false
     });
   });
 }
