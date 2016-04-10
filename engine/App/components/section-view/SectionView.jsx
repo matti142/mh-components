@@ -61,8 +61,10 @@ let Section = React.createClass({
     scrollIntoView(React.findDOMNode(this));
   },
 
-  handleClick(){
-    AppActions.editSection(this.props.index);
+  handleClick(e){
+    if (e.pageX > 0 && e.pageY > 0) {
+      AppActions.editSection(this.props.index);
+    }
     // AppActions.collapseSidebar(false);
     // AppActions.activateSection(this.props.index);
   },
