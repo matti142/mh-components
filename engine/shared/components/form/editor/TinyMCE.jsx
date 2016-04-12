@@ -15,7 +15,8 @@ function initializeTinyMCE(id, onChange) {
         ed.on('keyup', e => onChange(ed));
         ed.on('change', e => onChange(ed));
       },
-      menubar: false
+      menubar: false,
+      toolbar: "bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent"
     });
   });
 }
