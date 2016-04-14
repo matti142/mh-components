@@ -83,7 +83,7 @@ gulp.task('images', function () {
 var jsFilter = gulpFilter('**/*.js'),
 cssFilter = gulpFilter('**/*.css'),
 lessFilter = gulpFilter('**/*.less'),
-fontFilter = gulpFilter(['**/*.svg', '**/*.eot', '**/*.woff', '**/*.ttf']),
+fontFilter = gulpFilter(['**/*.svg', '**/*.eot', '**/*.woff', '**/*.woff2', '**/*.ttf']),
 imgFilter = gulpFilter(['**/*.png', '**/*.gif', '**/*.jpg']);
 
 gulp.task('bower', function () {
