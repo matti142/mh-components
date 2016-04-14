@@ -9,7 +9,7 @@
     "fontawesome": "latest",
     "fontawesome-selector": "https://github.com/themexpert/fontawesome-selector.git",
     "fullpage.js": "~2.6.7",
-    "jquery.nicescroll": "~3.6.0",
+    "jquery.nicescroll": "3.6.8-fix",
     "lesshat": "~3.0.2",
     "magnific-popup": "~1.0.0",
     "mjolnic-bootstrap-colorpicker": "~2.1.2",
