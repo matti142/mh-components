@@ -1,7 +1,7 @@
 // Smooth scrolling
-jQuery(function() {
+/*jQuery(function() {
   //only target navigation menus
-  jQuery('nav a[href*=#]:not([href=#]),.nav a[href*=#]:not([href=#])').click(function() {
+  jQuery("nav a[href*='#']:not([href='#']), .nav a[href*='#']:not([href='#'])").click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = jQuery(this.hash);
       var navbar = jQuery('.navbar').height() + 10; // minus navbar height
@@ -14,7 +14,7 @@ jQuery(function() {
       }
     }
   });
-});
+});*/
 
 // Init wowjs
 (new WOW).init();
