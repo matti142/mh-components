@@ -15,11 +15,18 @@ class PageTemplater {
 
     // Add a filter to the save post to inject out template into the page cache
     add_filter( 'wp_insert_post_data', array( $this, 'register_project_templates' ) );
+    add_filter('theme_page_templates', array($this, 'add_page_template'));
 
     // Add a filter to the template include to determine if the page has our
     // template assigned and return it's path
     // check 999999 - its important
     add_filter( 'template_include', array( $this, 'view_project_template' ), 99999999 );
+  }
+
+  public function add_page_template($templates) {
+	return array_merge(array_map(function($template) {
+		return $template['name'];
+	}, $this->templates), $templates);
   }
 
   /**
@@ -37,7 +44,8 @@ class PageTemplater {
     // Retrieve the cache list.
     // If it doesn't exist, or it's empty prepare an array
     $templates = wp_get_theme()->get_page_templates();
-    if ( empty( $templates ) ) {
+
+	if ( empty( $templates ) ) {
       $templates = array();
     }
 
@@ -52,7 +60,9 @@ class PageTemplater {
       return $carry;
     }, array() );
 
-    $templates = array_merge( $templates, $ourTemplates );
+
+
+	  $templates = array_merge( $templates, $ourTemplates );
 
     // Add the modified cache to allow WordPress to pick it up for listing
     // available templates

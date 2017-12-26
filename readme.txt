@@ -1,10 +1,10 @@
 === Onepager - One Page Builder ===
-Contributors: themexpert, nadimtuhin
+Contributors: themexpert, nadimtuhin,themesgrove
 Donate link: http://getonepager.com
-Tags: page builder, builder, onepage builder, drag and drop, reactjs, bootstrap, fontAwesome, gulp, less, layout, grid, composer, webpack, bower, ui
+Tags: page builder, builder, onepage builder, drag and drop, reactjs, bootstrap, fontAwesome, layout, composer, wysiwyg, editor
 Stable tag: %version%
 Requires at least: 4.2
-Tested up to: 4.3
+Tested up to: 4.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -49,6 +49,9 @@ Installing the plugins is just like installing other WordPress plugins.
 
 
 == Changelog ==
+= 1.2.6 =
+- WordPress 4.7 compatibility fix
+
 = 1.2.5 =
 - WP conflict resolver bug fix
 

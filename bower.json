@@ -17,8 +17,27 @@
     "toastr": "~2.1.1",
     "wow": "~1.1.2"
   },
+  "overrides": {
+    "jquery.nicescroll": {
+        "main": [
+            "./jquery.nicescroll.min.js",
+            "./zoomico.png"
+        ]
+    },
+    "fontawesome": {
+        "main": [
+          "css/font-awesome.css",
+          "css/font-awesome.min.css",
+          "fonts/fontawesome-webfont.eot",
+          "fonts/fontawesome-webfont.svg",
+          "fonts/fontawesome-webfont.ttf",
+          "fonts/fontawesome-webfont.woff",
+          "fonts/fontawesome-webfont.woff2"
+        ]
+    }
+  },
   "devDependencies": {},
   "resolutions": {
-    "jquery": ">=1.8.3"
+    "jquery": "~1.9.0"
   }
 }
